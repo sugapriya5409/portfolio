@@ -1,0 +1,69 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    
+}
+.det{
+
+    margin-left: 7.50%;
+    margin-top: -84px;
+    padding:10px;
+    justify-content: space-around;
+    display: flex;
+
+}
+.adr{
+    margin-left: 70%;
+    margin-top: -24px;
+    padding:10px;
+    display: inline;
+
+}
+.details h3{
+    margin: 10px;
+    font-style: italic;
+}
+.details p{
+    margin-top:-28px ;
+    margin-left: 13%;
+}
+.spl h3{
+    margin-top: -29px;
+    margin-left: 13%;
+   
+    
+}
+.spl h3,p{
+    font-style:oblique;
+}
+#para{
+    margin-top: -10px;
+}
+.skills{
+    margin-top:-28px ;
+    margin-left: 10%;
+    display: flex;
+    
+}
+#one{
+   margin-left: 20%;
+   margin-top: 1.89%;
+}#two{
+    margin-left: 20%;
+   margin-top: 1.89%;
+}
+.skills li{
+    list-style-type: none;
+}
+

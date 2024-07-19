@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        table,th,td{
+           border: 2px solid black;
+            border-collapse: collapse;
+            border-color: brown;
+            
+        }
+       
+        tr{
+            border-bottom: 2px solid black;
+        }
+       
+       tr:hover{
+        background-color: pink;
+       }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width:650px)" srcset="img_car.jpg">
+        <source media="(max-width:465px)" srcset="img_girl.jpg">
+        <img src="img_food.jpg" style="width: auto;">
+    </picture>
+    
+    <table style="width: 70%;">
+        <colgroup>
+        <col span="2" style="background-color: bisque;">
+        </colgroup>
+        <tr>
+            <th style="width: 70%;">Day</th>
+            <th>Savings</th>
+            <th>expenses</th>
+            
+        </tr>
+        <tr>
+            <td >Mon</td>
+            <td>$50</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>Tue</td>
+            <td>$80</td>
+            <td>$800</td>
+        </tr>
+        <tr>
+            <td>Wed</td>
+            <td>$100</td>
+            <td>$200</td>
+        </tr>
+        </table>
+        
+    
+</body>
+</html>
