@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-color: rgba(245, 245, 220, 0.486);
+}
+
+/* Logo */
+.logo a {
+    font-weight: bolder;
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: rgb(211, 69, 17);
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: black;
+}
+
+nav li {
+    margin-left: 50px;
+    display: inline-block; /* Use inline-block for better spacing */
+    padding: 5px;
+}
+
+/* Button */
+.button a {
+    border: 2px solid transparent;
+    border-color: black;
+    transition: 0.3s ease;
+    background-color: white;
+    padding: 8px 28px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.button a:hover {
+    background-color: rgb(211, 69, 17);
+    box-shadow: 0 0 25px rgb(211, 69, 17);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: rgb(211, 69, 17);
+    text-shadow: 0 0 50px rgb(211, 69, 17);
+}
+
+span {
+    color: rgb(211, 69, 17);
+}
+
+/* Image Section */
+.image {
+    float: right;
+    padding: 7%;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.image img {
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+}
+
+/* Content Section */
+.cont {
+    float: left;
+    padding: 0 50% 50% 20%;
+    margin-top: -380px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cont h2, .cont h4, .cont p {
+    margin-bottom: -10px;
+}
+
+.cont h2, .cont h4 {
+    margin-top: -20px;
+}
+
+.cont h4 {
+    font-weight: bolder;
+}
+
+/* CV Button */
+.cv {
+    margin-top: 30px;
+}
+
+.cv a {
+    color: white;
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5%;
+    padding: 10px;
+    background-color: rgb(15, 14, 14);
+    transition: 0.3s ease;
+}
+
+.cv a:hover {
+    background-color: rgb(211, 69, 17);
+    border-color: rgb(211, 69, 17);
+    box-shadow: 0 0 25px rgb(211, 69, 17);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Styles for PC view */
+@media screen and (min-width: 769px) {
+    body {
+        position: relative;
+    }
+
+    nav li {
+        margin-left: 50px;
+        margin-top: 0;
+    }
+
+    .image {
+        float: right;
+        padding: 5%;
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+
+    .cont {
+        float: left;
+        padding: 0 50% 50% 20%;
+        margin-top: -380px;
+    }
+}
+
+/* Styles for phone view */
+@media screen and (max-width: 768px) {
+    body {
+        position: relative;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 10px 0; /* Reduced margin for better spacing on small screens */
+        padding: 5px 0;
+        display: block; /* Stack menu items vertically */
+        text-align: center;
+    }
+
+    .button a {
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .image {
+        float: none;
+        padding: 0;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .image img {
+        width: 80%; /* Adjust image size for small screens */
+        height: auto;
+    }
+
+    .cont {
+        float: none;
+        width: 90%;
+        margin: 20px auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .cv {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cv a {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

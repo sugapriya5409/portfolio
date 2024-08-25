@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    padding: 20px;
+
+}
+nav h1{
+    display: inline;
+    color: white;
+    cursor: pointer;
+}
+
+nav h1:hover{
+    color: orangered;
+}
+ 
+nav ul{
+    display: inline;
+    margin-left: 60%;
+}
+nav li{
+    display: inline;
+    padding: 20px;
+
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav li a:hover{
+    color: orangered
+}
+
+span{
+    color: orangered;
+}
+.port{
+
+   
+    margin:0;
+    background-color: pink;
+}
+
+.port img{
+   
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 60px;
+    background-color: aqua;
+}
+
+.port p,#h1{
+    display: block;
+   text-align: center;
+   padding: 2px;
+   
+   background-color: aqua;
+   width: 20%;
+   margin-left: 40%;
+}
+
+.port #h1{
+    margin-top: 12px;
+
+}
+

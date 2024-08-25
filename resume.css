@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.det {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.det table {
+    margin: 0 auto;
+}
+
+.adr table {
+    margin: 0 auto;
+}
+
+/* Details Section */
+.details {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.spl {
+    margin-bottom: 20px;
+}
+
+.spl h3 {
+    color: #444;
+}
+
+.spl p {
+    color: #888;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    flex: 1 1 30%;
+    min-width: 150px;
+}
+
+.skills ul li {
+    background-color: #e7e7e7;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills ul {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .details {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .profile {
+        padding: 10px;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .det table, .adr table {
+        font-size: 14px;
+    }
+
+    .details h3, .details p {
+        font-size: 14px;
+    }
+}
